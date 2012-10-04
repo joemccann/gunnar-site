@@ -1,0 +1,41 @@
+{
+  "name": "gunnar",
+  "version": "0.0.1",
+  "private": true,
+  "start": "node app",
+  "description": "Gunnar is a drag and drop file uploader for Rackspace Cloud Files. This is the site.",
+  "author": {
+    "name": "Joe McCann",
+    "email": "joe@subprint.com"
+  },
+  "contributors": [
+    {
+      "name": "Joe McCann",
+      "email": "joe@subprint.com"
+    }
+  ],
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "felonyring"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joemccann/gunnar_site"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "express": ">=3.0.0rc3",
+    "ejs": "*",
+    "stylus": "*",
+    "smoosh": ">=0.3.2"
+  },
+  "subdomain": "gunnar",
+  "domains": [
+    "gunnarapp.com",
+    "www.gunnarapp.com"
+  ]
+}

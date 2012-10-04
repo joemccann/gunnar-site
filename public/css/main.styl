@@ -1,0 +1,141 @@
+bleu = #2ec1e3
+anchorBlue = #0E7ACE  /* for the lolz */
+linkTransitionTime = 0.4s
+bodyTransitionTime = 1.2s
+
+html, body
+  height 100%
+  overflow auto
+
+body, h1, h2, ul, li, p, img, a
+  margin 0
+  padding 0
+  outline 0
+
+body
+  font 100% 'Charcoal CY', Arial, sans-serif
+  font-weight 300
+  color #fff
+  background-color #fff
+  opacity 0
+
+.slick
+  opacity 1
+  background-color bleu
+  transition opacity linkTransitionTime linear  
+  -webkit-animation slick bodyTransitionTime linear 1
+  -moz-transition opacity, background-color bodyTransitionTime linear  
+  -o-transition opacity bodyTransitionTime linear  
+  -ms-transition opacity bodyTransitionTime linear  
+
+@keyframes slick
+  from
+    opacity 0
+    background-color #fff 
+  to
+    opacity 1
+    background-color bleu
+
+header
+  padding-top 40px
+
+h1
+  background transparent url(http://cdn.gunnarapp.com/logo_820x238.png) no-repeat scroll 0 0
+  height 238px
+  width 820px
+  margin 0 auto 
+
+a, a:visited
+  color anchorBlue
+  text-decoration none
+
+a:hover, a:focus, a:active
+  color #fff
+
+.buttonish
+  background-color #fff
+  padding 4px 6px
+  border-color anchorBlue
+  border-radius 8px
+  -webkit-box-shadow 0 0 8px anchorBlue
+  -moz-box-shadow 0 0 8px anchorblue
+  box-shadow 0 0 8px anchorBlue
+
+.buttonish:hover, .buttonish:focus, .buttonish:active
+  background-color anchorBlue
+  outline none
+  -moz-transition all linkTransitionTime linear  
+  -o-transition all linkTransitionTime linear  
+  -webkit-transition all linkTransitionTime linear  
+  -ms-transition all linkTransitionTime linear  
+  transition all linkTransitionTime linear  
+
+.background
+  position absolute
+  top 0 
+  left 0
+  width 100%
+  height 100%
+  z-index 1
+  
+
+.container
+  z-index 100
+  position relative
+
+.container, .background
+  height 100%
+  width 100%
+
+#main
+  margin 0 auto
+  width 960px
+
+h1, #clouds, #copy, #purchase
+  text-align center
+
+#clouds
+  margin -50px 170px 0
+  width 656px
+
+p
+  font-size 1.8em
+
+.smallcopy
+  font-size .875em
+
+.top15
+  padding 15px 0 0 0
+
+.top25
+  padding 25px 0 0 0
+
+.breaker
+  display inline-block
+  margin-top 20px
+
+#copy, #purchase
+  width 600px
+  margin 10px auto 0
+
+#purchase
+  width 600px
+  margin 30px auto 0
+  
+#purchase p
+  font-size 1em 
+
+.rad
+  background-image url(http://cdn.gunnarapp.com/overlay.png)
+  background-size 100% 100%
+  background-image -moz-radial-gradient(50% 50%, circle cover, rgba(255,255,255,0.3) 0%,transparent 150%)
+  background-image -webkit-radial-gradient(50% 50%, circle cover, rgba(255,255,255,0.3) 0%,transparent 150%)
+  background-image -o-radial-gradient(50% 50%, circle cover, rgba(255,255,255,0.3) 0%,transparent 150%)
+  background-image -ms-radial-gradient(50% 50%, circle cover, rgba(255,255,255,0.3) 0%,transparent 150%)
+  background-image radial-gradient(50% 50%, circle cover, rgba(255,255,255,0.3) 0%,transparent 150%)
+
+
+.off
+  position absolute
+  top -9999em
+  left -9999em

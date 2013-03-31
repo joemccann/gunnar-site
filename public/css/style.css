@@ -216,7 +216,7 @@ header {
   padding-top: 40px;
 }
 h1 {
-  background: transparent url("http://cdn.gunnarapp.com/logo_820x238.png") no-repeat scroll 0 0;
+  background: transparent url("/img/logo_820x238.png") no-repeat scroll 0 0;
   height: 238px;
   width: 820px;
   margin: 0 auto;

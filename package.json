@@ -1,6 +1,6 @@
 {
   "name": "gunnar",
-  "version": "0.0.1",
+  "version": "0.0.1-2",
   "private": true,
   "start": "node app",
   "description": "Gunnar is a drag and drop file uploader for Rackspace Cloud Files. This is the site.",
